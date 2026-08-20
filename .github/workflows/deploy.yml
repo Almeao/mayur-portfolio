@@ -36,7 +36,7 @@ jobs:
 
       - name: Build Next.js
         env:
-          NEXT_PUBLIC_BASE_PATH: /mayur
+          NEXT_PUBLIC_BASE_PATH: /mayurr
         run: npm run build
 
       - name: Add .nojekyll file
