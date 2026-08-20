@@ -29,10 +29,10 @@ export default function ScrollyCanvas({ heroRef }: Props) {
     const getBasePath = () => {
       if (typeof window !== 'undefined') {
         const p = window.location.pathname;
-        if (p.startsWith('/mayurr')) return '/mayurr';
-        if (window.location.hostname.includes('github.io')) return '/mayurr';
+        if (p.startsWith('/mayur-portfolio')) return '/mayur-portfolio';
+        if (window.location.hostname.includes('github.io')) return '/mayur-portfolio';
       }
-      return process.env.NEXT_PUBLIC_BASE_PATH || (process.env.NODE_ENV === 'production' ? '/mayurr' : '');
+      return process.env.NEXT_PUBLIC_BASE_PATH || (process.env.NODE_ENV === 'production' ? '/mayur-portfolio' : '');
     };
 
     const basePath = getBasePath();
